@@ -1,0 +1,92 @@
+.event-calendar {
+  margin-bottom: 20px;
+}
+
+/* Improve button styles */
+.rbc-btn-group {
+  display: flex !important;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.rbc-btn-group button {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  color: #212529;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.rbc-btn-group button:hover {
+  background-color: #e9ecef;
+}
+
+.rbc-btn-group button.rbc-active {
+  background-color: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+}
+
+/* Improve event styles */
+.rbc-event {
+  padding: 5px !important;
+  border-radius: 4px !important;
+  font-size: 0.85em !important;
+}
+
+.rbc-event-label {
+  font-size: 0.8em !important;
+}
+
+/* Improve day cell styles */
+.rbc-day-bg {
+  transition: background-color 0.2s ease-in-out;
+}
+
+.rbc-day-bg:hover {
+  background-color: #f8f9fa;
+}
+
+.rbc-off-range-bg {
+  background-color: #f8f9fa !important;
+}
+
+.rbc-today {
+  background-color: #e6f7ff !important;
+}
+
+/* Improve header styles */
+.rbc-header {
+  padding: 10px 3px !important;
+  font-weight: 500 !important;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Improve toolbar styles */
+.rbc-toolbar {
+  margin-bottom: 15px !important;
+  flex-wrap: wrap;
+}
+
+.rbc-toolbar-label {
+  font-weight: bold !important;
+  font-size: 1.2em !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rbc-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .rbc-toolbar-label {
+    margin: 10px 0;
+  }
+  
+  .rbc-btn-group {
+    margin-bottom: 10px;
+  }
+}
